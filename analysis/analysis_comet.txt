@@ -1,0 +1,8 @@
+Percentage of accepted paremeters after Survival at different dose-rates discriminator: 0.700
+Percentage of accepted paremeters after Low dose-rate discriminator: 85.340
+Percentage of accepted paremeters after Fractionation discriminator: 75.700
+Percentage of accepted paremeters after Additional discriminator: 0.180
+Percentage of accepted paremeters after all discriminators: 0.000
+
+Clonogenic error (minimum, maximum, mean): 4.859e-05  1.914e-01  4.699e-02  
+Comet error (minimum, maximum, mean): 9.005e-02  3.209e-01  1.218e-01  
