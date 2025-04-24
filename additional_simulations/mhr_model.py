@@ -286,7 +286,6 @@ class mhr_model_combined_1(ProbabilisticModel, Continuous):
             # Simulate at 6 Gy (comet and clonogenic and comet)
             fun=lambda t, x: dP_dt(t,x,alpha,cr,ce,mu_g,gamma,6.)
             Ps = odeint(fun, P0, ts, hmax = 1./3600 )
-            Ps = odeint(fun, P0, ts, hmax = 1./3600 )
             result[1,10] = np.log10(Ps[-1,0])
             
             result[0,0:10] = weight*get_normalized_row(Ps, get_index_from_minutes( 15) )
@@ -378,7 +377,6 @@ class mhr_model_combined_30(ProbabilisticModel, Continuous):
             
             # Simulate at 6 Gy (comet and clonogenic and comet)
             fun=lambda t, x: dP_dt(t,x,alpha,cr,ce,mu_g,gamma,6.)
-            Ps = odeint(fun, P0, ts, hmax = 1./3600 )
             Ps = odeint(fun, P0, ts, hmax = 1./3600 )
             result[1,10] = np.log10(Ps[-1,0])
             
